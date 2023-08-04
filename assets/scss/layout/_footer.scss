@@ -1,0 +1,150 @@
+.background {
+  background-color: $main;
+}
+
+// .container{
+//   max-width: 1320px;
+//   padding: 0 12px;
+//   margin: 0 auto;
+// }
+
+.footer {
+  padding-top: 48px;
+  color: $txt_light;
+
+  a {
+    text-decoration: none;
+    color: $txt_light;
+  }
+}
+
+.ankle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 32px;
+
+  .linkGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .nav {
+    margin-right: auto;
+    display: flex;
+    flex-shrink: 1;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 48px;
+      }
+    }
+  }
+
+  .community {
+    display: flex;
+    flex-shrink: 1;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      img {
+        display: block;
+        width: 48px;
+      }
+    }
+  }
+
+  .contact {
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.foot {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  .copyright {
+    margin-right: auto;
+  }
+
+  .terms2 {
+    margin-left: 48px;
+  }
+}
+
+@media(max-width:768px) {
+  .ankle {
+    .community {
+      li {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .foot {
+    margin-bottom: 40px;
+  }
+}
+
+@media(max-width: 576px) {
+  .ankle {
+    .linkGroup {
+      li {
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 375px) {
+  .footer {
+    padding-top: 24px;
+    .ankle {
+      flex-direction: row-reverse;
+      .linkGroup {
+        .nav {
+          display: none;
+        }
+      }
+      .community {
+        img {
+          width: 24px;
+        }
+      }
+      .contact {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+    .foot {
+      padding-top: 16px;
+      padding-bottom: 24px;
+      flex-direction: column;
+      p {
+        margin-bottom: 8px;
+      }
+      .terms2 {
+        margin: 0;
+      }
+    }
+  }
+}

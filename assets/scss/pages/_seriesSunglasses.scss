@@ -1,0 +1,176 @@
+.seriesSunglasses{
+    padding-bottom: 80px;
+    .seriesOptions, .seriesOptions_s{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 32px;
+        border-bottom: 1px solid #DCDCDC;
+        .choose{
+            border-bottom: 8px solid $main;
+        }
+        .notChoose{
+            border-bottom: 8px solid rgba(0,0,0,0);
+        }
+        li{
+            flex-grow: 1;
+            text-align: center;
+            border-left: 1px solid #DCDCDC;
+            border-right: 1px solid #DCDCDC;
+        }
+        a{
+            padding-top: 24px;
+            padding-bottom: 24px;
+            display: block;
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+    .seriesOptions_s{
+        display: none;
+    }
+    .pictures{
+        display: flex;
+        margin-bottom: 80px;
+    }
+    .seriesName{
+        font-size: 42px;
+        text-align: center;
+    }
+    .seriesName_ch{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .glasses{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px 24px;
+        width: 100%;
+        margin-bottom: 80px;
+        .card{
+            width: 30%;
+            flex-grow: 1;
+        }
+        .cardBody{
+            font-size: 24px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p{
+                text-align: justify;
+            }
+            .price{
+                color: $txt_main;
+                font-weight: 500;
+            }
+        }
+        .cardFooter{
+            a{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+            }
+            .coffee{
+                background-color: #5F3E2D;
+                margin-right: 8px;
+            }
+            .brown{
+                background-color: #B75929;
+            }
+        }
+    }
+    .pagination{
+        display: flex;
+        .page{
+            border: 1px solid #555555;
+            padding: 12px 16px;
+            font-size: 18px;
+        }
+        .page2{
+            background-color: #000000;
+            color: $txt_light;
+        }
+        .next, .prev{
+            font-size: 19px;
+        }
+        .next{
+            background-color: #F2F2F2;
+        }
+    }
+}
+@media(max-width: 992px){
+    .seriesSunglasses{
+        .glasses{
+            .card{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .seriesSunglasses{
+        .seriesOptions{
+            display: none;
+        }
+        .seriesOptions_s{
+            display: flex;
+        }
+        .pictures{
+            .pic_l{
+                content: url(/assets/images/product-header-sm-1.png);
+            }
+            .pic_r{
+                content: url(/assets/images/product-header-sm-2.png);
+            }
+        }
+        .glasses{
+            gap: 40px 24px;
+            .card{
+                width: 45%;
+            }
+        }
+    }
+}
+@media(max-width: 375px){
+    .seriesSunglasses{
+        padding-bottom: 64px;
+        .pictures{
+            margin-bottom: 40px;
+        }
+        .seriesName_ch{
+            margin-bottom: 24px;
+        }
+        .seriesOptions_s{
+            font-size: 16px;
+            li{
+                a{
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        .glasses{
+            gap: 24px;
+            margin-bottom: 64px;
+            .card{
+                width: 98%;
+            }
+        }
+        .pagination{
+            .page{
+                font-size: 16px;
+                padding: 12px 13px;
+            }
+        }
+    }
+}

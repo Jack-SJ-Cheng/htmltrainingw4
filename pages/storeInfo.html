@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市據點</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="storeInfo container">
+            <h2 class="h2 bold">門市據點</h2>
+            <label class="lb-region txt-l" for="region">選擇分店</label>
+            <select class="se-region" name="region" id="region">
+                <option value="chungshan">台北中山旗艦店</option>
+                <option value="green">台北綠緣店</option>
+                <option value="qingshuei">台中清水旗艦店</option>
+                <option value="chungzhen">高雄中正形象店</option>
+                <option value="dream">高雄夢時代店</option>
+            </select>
+            <div class="info">
+                <div class="store">
+                    <img src="/assets/images/store-1.png" alt="store picture">
+                    <div class="card">
+                        <div class="cardHeader txt-l">
+                            <h3>台北中山旗艦店</h3>
+                        </div>
+                        <div class="cardBody txt-m">
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    call
+                                </span>
+                                <span>電話：(02)000-1234</span>
+                            </p>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    schedule
+                                </span>
+                                <span>營業時間：10:00-21:00</span>
+                            </p>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    location_on
+                                </span>
+                                <span>地址：台北市中山區南京東路25巷2-1號</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <img src="/assets/images/螢幕快照 2020-02-13 16.35.44.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

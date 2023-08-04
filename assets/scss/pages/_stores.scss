@@ -1,0 +1,57 @@
+.stores {
+    padding-top: 96px;
+    padding-bottom: 80px;
+
+    h2 {
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 32px;
+    }
+
+    .lb-region {
+        margin-right: 16px;
+    }
+
+    .se-region {
+        width: 304px;
+        height: 38px;
+    }
+
+    .cards {
+        margin-top: 41px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px 24px;
+        .card {
+            width: 31%;
+            border: 1px solid #00000020;
+            .cardHeader{
+                padding: 8px 24px;
+                border-bottom: 1px solid #00000020;
+            }
+            .cardBody{
+                padding: 16px 24px;
+            }
+            .cardFooter{
+                background-color: #000;
+            }
+            a{
+                display: block;
+                text-align: center;
+                color: $txt_light;
+                padding: 16px 0;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .stores{
+        .cards{
+            gap: 24px;
+            .card{
+                width: 48%;
+            }
+        }
+    }
+}

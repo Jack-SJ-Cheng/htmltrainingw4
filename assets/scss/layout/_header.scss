@@ -1,0 +1,100 @@
+body{
+  line-height: 1.5;
+  font-family: $font_ch, serif;
+}
+.container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.background_header {
+  background: $main;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-family: $font_ch;
+  height: 80px;
+  .logo {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url("https://i.imgur.com/K0h720j.png");
+    // background-image: url(../../images/logo-new1.png);
+    background-size: cover;
+    background-position: center;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  a {
+    color: $txt_light;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+    margin-left: auto;
+    li {
+      margin-left: 64px;
+    }
+  }
+}
+@media(max-width: 768px){
+  .container{
+    max-width: 720px;
+  }
+}
+@media(max-width: 576px){
+  .header{
+    .nav{
+      font-size: 16px;
+      line-height: 1.5;
+      li{
+        margin-left: 24px;
+      }
+    }
+  }
+}
+@media(max-width: 375px){
+  .container{
+    max-width: 375px;
+    padding-left: 13px;
+    padding-right: 14px;
+  }
+  .background_header{
+    .container{
+      padding: 0;
+    }
+  }
+  .header{
+    flex-direction: column;
+    height: 176px;
+    h1{
+      padding-left: 15px;
+      height: 80px;
+      align-self: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav{
+      background-color: $main;
+      flex-wrap: wrap;
+      margin: 0;
+      width: 100%;
+      li{
+        margin: 0;
+        width: 50%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}

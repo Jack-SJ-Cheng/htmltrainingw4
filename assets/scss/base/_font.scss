@@ -1,0 +1,51 @@
+// 英文字體 Google font: Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// 中文字體 Google font: 思源黑體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+$font_en: 'Roboto';
+$font_ch: 'Noto Sans TC';
+
+.h1{
+    font-size: 64px;
+}
+.h2{
+    font-size: 48px;
+}
+.h3{
+    font-size: 36px;
+}
+.txt-l{
+    font-size: 24px;
+}
+.txt-m{
+    font-size: 20px;
+}
+.txt-s{
+    font-size: 16px;
+}
+.txt-xs{
+    font-size: 14px;
+}
+.bold{
+    font-weight: bold;
+}
+.black{
+    font-weight: 900;
+}
+.medium{
+    font-weight: 500;
+}
+.font_en{
+    font-family: $font_en;
+}
+.font_ch{
+    font-family: $font_ch;
+}
+.italic{
+    font-style: italic;
+}

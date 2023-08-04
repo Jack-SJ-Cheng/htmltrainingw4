@@ -1,0 +1,36 @@
+.outerBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pagination {
+    display: flex;
+    .page {
+        border: 1px solid #555555;
+        padding: 12px 16px;
+        font-size: 18px;
+    }
+
+    .page2 {
+        background-color: #000000;
+        color: $txt_light;
+    }
+
+    .next,
+    .prev {
+        font-size: 19px;
+    }
+
+    .next {
+        background-color: #F2F2F2;
+    }
+}
+
+@media(max-width: 375px) {
+    .pagination {
+        .page {
+            font-size: 16px;
+            padding: 12px 13px;
+        }
+    }
+}
