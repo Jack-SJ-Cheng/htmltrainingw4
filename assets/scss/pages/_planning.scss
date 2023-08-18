@@ -2,9 +2,13 @@
     padding-top: 24px;
     padding-bottom: 80px;
     .tag {
-        color: $main;
-        font-weight: bold;
-        font-size: 24px;
+        a{
+            color: $main;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            margin-right: 15px;
+        }
         span {
             margin-right: 15px;
         }
@@ -75,11 +79,17 @@
         font-size: 32px;
     }
     .tags {
-        width: 75%;
-        font-size: 24px;
         display: flex;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 0 24px;
+        .sideTag{
+            text-decoration: none;
+            color: $main;
+            font-size: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
         span {
             margin-right: 24px;
         }

@@ -99,28 +99,21 @@
     }
   }
   .foot {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
 @media(max-width: 576px) {
-  .ankle {
-    .linkGroup {
-      li {
-        &:not(:last-child) {
-          margin-right: 12px;
-        }
-      }
-    }
-  }
-}
-
-@media(max-width: 375px) {
   .footer {
     padding-top: 24px;
     .ankle {
       flex-direction: row-reverse;
       .linkGroup {
+        li {
+          &:not(:last-child) {
+            margin-right: 12px;
+          }
+        }
         .nav {
           display: none;
         }

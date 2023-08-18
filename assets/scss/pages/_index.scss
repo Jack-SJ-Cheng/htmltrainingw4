@@ -78,7 +78,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      color: #AA0601;
       // flex-shrink: 0;
       img {
         margin-bottom: 8px;
@@ -111,7 +111,7 @@ body {
         background-color: white;
         width: 100%;
         text-align: center;
-        color: $txt_main;
+        color: #AA0601;
         padding: 8px 0;
       }
     }
@@ -208,7 +208,19 @@ body {
     }
   }
 }
-
+@media(max-width:992px){
+  .series {
+    width: 50%;
+  
+    .series_all {
+      flex-wrap: wrap;
+  
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
 @media(max-width:768px) {
 
   .background_feature {
@@ -223,17 +235,6 @@ body {
     }
   }
 
-  .series {
-    width: 50%;
-
-    .series_all {
-      flex-wrap: wrap;
-
-      li {
-        width: 100%;
-      }
-    }
-  }
 
   .background_joint {
     .joint {

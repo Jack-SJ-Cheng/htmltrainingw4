@@ -136,6 +136,19 @@
         }
     }
 }
+@media(max-width: 576px){
+    .blog{
+        .posts{
+            .card{
+                flex-direction: column;
+                gap: 8px;
+                .imgBtn, .article{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @media(max-width: 375px){
     .background_blog_top{
         display: none;
@@ -151,7 +164,6 @@
             margin-bottom: 64px;
             .card{
                 flex-direction: column;
-                gap: 8px;
             }
             .content{
                 display: none;

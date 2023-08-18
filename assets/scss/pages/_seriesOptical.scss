@@ -123,6 +123,17 @@
         }
     }
 }
+@media(max-width: 576px){
+    .seriesOptical{
+        .glasses{
+            gap: 24px;
+            margin-bottom: 64px;
+            .card{
+                width: 98%;
+            }
+        }
+    }
+}
 @media(max-width: 375px){
     .seriesOptical{
         padding-bottom: 64px;
@@ -139,13 +150,6 @@
                     padding-top: 16px;
                     padding-bottom: 8px;
                 }
-            }
-        }
-        .glasses{
-            gap: 24px;
-            margin-bottom: 64px;
-            .card{
-                width: 98%;
             }
         }
     }
