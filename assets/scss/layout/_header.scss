@@ -47,21 +47,28 @@ body{
   .container{
     max-width: 720px;
   }
-}
-@media(max-width: 576px){
   .header{
     .nav{
-      font-size: 16px;
-      line-height: 1.5;
       li{
         margin-left: 24px;
       }
     }
   }
 }
-@media(max-width: 375px){
+// @media(max-width: 576px){
+//   .header{
+//     .nav{
+//       font-size: 16px;
+//       line-height: 1.5;
+//       li{
+//         margin-left: 12px;
+//       }
+//     }
+//   }
+// }
+@media(max-width: 576px){
   .container{
-    max-width: 375px;
+    max-width: 100%;
     padding-left: 13px;
     padding-right: 14px;
   }
